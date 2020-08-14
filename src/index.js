@@ -2,15 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import NomeClassComponent from './NomeClassComponent';
-import EnderecoClassComponent from './EnderecoClassComponent';
-import HobbiesClassComponent from './HobbiesClassComponent';
+/* import EnderecoClassComponent from './EnderecoClassComponent';
+import HobbiesClassComponent from './HobbiesClassComponent'; */
 import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   
   <React.StrictMode>
     <NomeClassComponent name='Fábio'/>
-    <EnderecoClassComponent address='Rua Doutor Alfredo Zacharias, 1510 Casa 93'/>
-    <HobbiesClassComponent hobby1='Dormir' hobby2='Jogar' hobby3='Ver filme'/>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
