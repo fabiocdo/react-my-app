@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import NomeClassComponent from './NomeClassComponent';
-/* import EnderecoClassComponent from './EnderecoClassComponent';
-import HobbiesClassComponent from './HobbiesClassComponent'; */
+import Calculator from './Calculator';
 import * as serviceWorker from './serviceWorker';
-ReactDOM.render(
-  
+ReactDOM.render(  
   <React.StrictMode>
-    <NomeClassComponent name='Fábio'/>
-    
+    <Calculator/>    
   </React.StrictMode>,
   document.getElementById('root')
 );
