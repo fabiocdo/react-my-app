@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Calculator from './Calculator';
+import Root from './Root';
 import * as serviceWorker from './serviceWorker';
 ReactDOM.render(  
   <React.StrictMode>
-    <Calculator/>    
+    <Root/>    
   </React.StrictMode>,
   document.getElementById('root')
 );

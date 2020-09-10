@@ -55,14 +55,37 @@ class Calculator extends Component {
   calculate = (arg) => {
     const { number1, number2 } = this.state;
     const operation = arg.target.value;
+    
+    switch(operation){
 
-    const result = eval(number1 + operation + number2);
+      case '+':
+        this.setState({
+          result: parseFloat(number1) + parseFloat(number2) 
+        })
+        break;
 
-    this.setState({
-      result
-    })
+      case '-':
+        this.setState({
+          result: parseFloat(number1) - parseFloat(number2)
+        })
+        break;
+        
+      case '/':
+        this.setState({
+          result: parseFloat(number1) / parseFloat(number2)
+        })
+        break;
 
-    console.log(number1 + operation + number2);
+      case '*':
+        this.setState({
+          result: parseFloat(number1) * parseFloat(number2)
+        })
+        break;
+
+      default:
+        console.log("Default");
+    }
+
   }
 
   clear = () =>{
